@@ -1,79 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
-    margin: 0;
-    text-align: center;
-    align-items: center;
-    background-color: #1F2937;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1c1c1c;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: #10b981;
+  min-width: 550px;
+  min-height: 550px;
+  background-color: #1f2937;
+  padding: 3em;
 }
 
 h1 {
-    font-size: 40px;
-    font-weight: bolder;
-    color: #FFFFFF;
+  font-size: 40px;
+  font-weight: bolder;
+  color: #ffffff;
 }
 
 h1:first-child {
-    margin-top: 5%;
+  margin-top: 5%;
 }
 
-hr{
-    width: 450px;
-    background-color: #2F3E53; 
+.divider {
+  width: 450px;
+  background-color: #2f3e53;
+  margin-bottom: 35px;
 }
 
 h4 {
-    font-size: 20px;
-    font-weight: normal;
-    color: gray;
+  font-size: 20px;
+  font-weight: normal;
+  color: gray;
 }
 
 button {
-    background-color: #10B981;
-    border: 1px solid #10B981;
-    color: #FFFFFF;
-    width: 223px;
-    height: 42px;
-    margin: 25px 5px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 16px;
+  background-color: #10b981;
+  border: 1px solid #10b981;
+  color: #ffffff;
+  width: 223px;
+  height: 42px;
+  margin: 25px 5px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
 }
 
 .btn-wrapper {
-    display: flex;
-    flex-direction: column;
-    width: 440px;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 440px;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 2em 0;
 }
 
 .tamanho-pass {
-    background-color: #10B981;
-    border-radius: 6px;
-    border: 1px solid #10B981;
-    width: 50px;
-    color:#FFFFFF ;
-
+  background-color: #10b981;
+  border-radius: 6px;
+  border: 1px solid #10b981;
+  width: 50px;
+  color: #ffffff;
 }
 
 input {
-    background-color: #273549;
-    border: 1px solid #273549;
-    color: #10B981;
-    width: 211px;
-    height: 40px;
-    margin: 10px 5px;
-    border-radius: 6px;
-    text-align: center;
+  background-color: #273549;
+  border: 1px solid #273549;
+  color: #10b981;
+  width: 211px;
+  height: 40px;
+  margin: 10px 5px;
+  border-radius: 6px;
+  text-align: center;
+}
 
+input:hover,
+input:focus {
+  outline: 1px solid #10b981;
+}
+
+::placeholder {
+  color: #202b3c;
+  font-size: 3rem;
 }
 
 .green {
-    color:  #4ADF86;
+  color: #4adf86;
 }
 
 label {
-    color:#FFFFFF ;
-    font-size: 20px;
+  color: #ffffff;
+  font-size: 20px;
 }
-

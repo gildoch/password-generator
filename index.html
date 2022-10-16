@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,36 +8,40 @@
     <link rel="stylesheet" href="index.css">
     <title>PassWord Generator</title>
 </head>
+
 <body>
     <main>
         <h1>Generate a</h1>
         <h1 class="green">random password</h1>
         <h4>Never use an insecure password again.</h4>
-        
+
         <div class="btn-wrapper">
+
+            <button onclick="gerarPass()">
+                <span class="btn-icon">
+                    <img src="./Lightning bolt.svg" alt="">
+                </span>
+                <span class="btn -text">Generate passwords</span>
+            </button>
+
             <label for="tam-pass">
                 Length
-                <input class="tamanho-pass"  type="text" name="" id="tam-pass">
+                <input class="tamanho-pass" type="text" name="" id="tam-pass">
             </label>
-        <button onclick="gerarPass()">
-            <span class="btn-icon">
-                <img src="./Lightning bolt.svg" alt="">
-            </span>
-            <span class="btn -text">Generate passwords</span>
-        </button>
         </div>
-        
+
         <hr class="divider">
         <div class="btn-left">
-            <input type="text" name="" id="passWord1">
-            <input type="text" name="" id="passWord2">
+            <input type="text" name="" id="passWord1" placeholder="...">
+            <input type="text" name="" id="passWord2" placeholder="...">
         </div>
         <div class="btn-rigth">
-            <input type="text" name="" id="passWord3">
-            <input type="text" name="" id="passWord4">
+            <input type="text" name="" id="passWord3" placeholder="...">
+            <input type="text" name="" id="passWord4" placeholder="...">
         </div>
 
     </main>
     <script src="index.js"></script>
 </body>
+
 </html>
