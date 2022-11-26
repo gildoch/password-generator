@@ -1,47 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+  <head>
+    <meta
+      name="description"
+      content="Password Generator site created with vanila javascript"
+    />
+    <meta name="robots" content="index, nofollow" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
     <title>PassWord Generator</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <main>
-        <h1>Generate a</h1>
-        <h1 class="green">random password</h1>
-        <h4>Never use an insecure password again.</h4>
+      <h1>Generate a <span class="green">random password</span></h1>
+      <h4>Never use an insecure password again.</h4>
 
-        <div class="btn-wrapper">
+      <div class="btn-wrapper">
+        <button aria-label="generator password" id="btn-generatePass">
+          <span class="btn-icon">
+            <img src="./images/Lightning bolt.svg" alt="logo" />
+          </span>
+          <span class="btn-text">Generate passwords</span>
+        </button>
 
-            <button onclick="gerarPass()">
-                <span class="btn-icon">
-                    <img src="./Lightning bolt.svg" alt="">
-                </span>
-                <span class="btn -text">Generate passwords</span>
-            </button>
+        <label for="tam-pass" class="tam-pass">
+          Length
+          <input
+            class="tamanho-pass"
+            type="number"
+            name="tam-pass"
+            id="tam-pass"
+            min="1"
+            max="12"
+          />
+        </label>
+      </div>
 
-            <label for="tam-pass">
-                Length
-                <input class="tamanho-pass" type="text" name="" id="tam-pass">
-            </label>
-        </div>
+      <p id="rangeError" class="tooltip"></p>
+      <hr class="divider" />
+      <p id="myTooltip" class="tooltip"></p>
 
-        <hr class="divider">
+      <div class="input-wrapper">
         <div class="btn-left">
-            <input type="text" name="" id="passWord1" placeholder="...">
-            <input type="text" name="" id="passWord2" placeholder="...">
+          <input type="text" name="" id="passWord1" placeholder="..." />
+          <input type="text" name="" id="passWord2" placeholder="..." />
         </div>
         <div class="btn-rigth">
-            <input type="text" name="" id="passWord3" placeholder="...">
-            <input type="text" name="" id="passWord4" placeholder="...">
+          <input type="text" name="" id="passWord3" placeholder="..." />
+          <input type="text" name="" id="passWord4" placeholder="..." />
         </div>
-
+      </div>
     </main>
     <script src="index.js"></script>
-</body>
-
+  </body>
 </html>
